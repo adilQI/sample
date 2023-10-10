@@ -18,6 +18,5 @@ jobs:
 
       - name: C++ Run
         run: |
-            ./a.out
-            5
+            ./a.out <<< "123"
         shell: bash
