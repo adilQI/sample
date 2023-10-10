@@ -1,0 +1,17 @@
+name: First workflow
+
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: C++ build
+        run: |
+            g++ sample.cpp
+            ./a.out
+        shell: bash
