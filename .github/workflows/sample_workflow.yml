@@ -13,5 +13,11 @@ jobs:
       - name: C++ build
         run: |
             g++ sample.cpp
+            echo "Done building"
+        shell: bash
+
+      - name: C++ Run
+        run: |
             ./a.out
+            5
         shell: bash
